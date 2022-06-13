@@ -10,7 +10,7 @@ const setUpDatabase = () => {
 
     const Cat = CatModel(connection, Sequelize);
 
-    connection.sync({alter: true});
+    connection.sync({ alter: true });
 
     return { Cat };
 };
